@@ -1,7 +1,7 @@
 # Task 02
 Using Object Detection and Classification for security at construction sites
 
-The main file for object detection and classification is [Integration_yolo&NN_models.ipynb](https://github.com/Anustup900/Viact-Assignment/blob/main/Task-01/Integrating_yolo%26NN_models.ipynb). Final integration is done in that-
+The main file for object detection and classification is [Integration_yolo&NN_models.ipynb](https://github.com/Anustup900/Viact-Assignment/blob/main/Task-02/Integrating_yolo%26NN_models.ipynb). Final integration is done in that-
 
 1. Retrained YoloV3 model is used to detect heads in images
 2. Two neural network models trained for mask and helmet detection are used.
@@ -11,11 +11,11 @@ It mainly consist of two tasks.
 
 First is the object detection i.e. detection of heads from the frame. For that i have used state-of-the-art YOLO V3 model(though the newest v4 is also available). I have trained around 1500 iterations for that as only single object was there. 
 
-Training is in file [YOLO_Training.ipynb](https://github.com/Anustup900/Viact-Assignment/blob/main/Task-01/YOLO_Training.ipynb).
+Training is in file [YOLO_Training.ipynb](https://github.com/Anustup900/Viact-Assignment/blob/main/Task-02/YOLO_Training.ipynb).
 
 Second task was to train neural network models for detecting masks and helmets. I used the concept of transfer learning and used VGG16(just for simplicity) model and retrained it after adding few layers in the model and freezing the previous ones.
 
-Training file is [Mask&Helmet_models_training.ipynb](https://github.com/Anustup900/Viact-Assignment/blob/main/Task-01/Mask%26Helmet_models_training.ipynb)
+Training file is [Mask&Helmet_models_training.ipynb](https://github.com/Anustup900/Viact-Assignment/blob/main/Task-02/Mask%26Helmet_models_training.ipynb)
 
 The accuracy is of helmet detection model is fine but mask detection is not up to the mark we surely need more data to increase accuracy and can also try some better models than VGG16.
 
